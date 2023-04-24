@@ -17,10 +17,9 @@ while n < 1:
 amounts_of_berries = [random.randint(10, 100) for i in range(n)]
 print(amounts_of_berries)
 picked_berries = []
-for i in range(n - 2):
-    picked_berries.append(amounts_of_berries[i] + amounts_of_berries[i+1] + amounts_of_berries[i+2])
-picked_berries.append(amounts_of_berries[-2]+amounts_of_berries[-1]+amounts_of_berries[0])
-picked_berries.append(amounts_of_berries[-1]+amounts_of_berries[0]+amounts_of_berries[1])
+for i in range(n):
+    picked_berries.append(amounts_of_berries[i-2] + amounts_of_berries[i-1] + amounts_of_berries[i])
+
 # print(picked_berries)
 print(f"Maximum amount of berries that could be picked is: ")
 print(max(picked_berries))
