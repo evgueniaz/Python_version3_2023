@@ -8,11 +8,11 @@ import random
 n = int(input("Enter a natural number for the first list length >> "))
 while n < 1:
     print(f"You've entered not a natural number.")
-    n = int(input("Enter a natural number for a list length >> "))
-m = int(input("Enter a natural number for the first list length >> "))
+    n = int(input("Enter a natural number for the first list length >> "))
+m = int(input("Enter a natural number for the second list length >> "))
 while n < 1:
     print(f"You've entered not a natural number.")
-    m = int(input("Enter a natural number for a list length >> "))
+    m = int(input("Enter a natural number for the second list length >> "))
 rooster_1 = [random.randint(1, 20) for i in range(n)]
 print(rooster_1)
 rooster_2 = [random.randint(1, 20) for i in range(m)]
