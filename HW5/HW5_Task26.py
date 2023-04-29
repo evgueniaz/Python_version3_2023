@@ -5,7 +5,7 @@
 #     A = 2; B = 3 -> 8 
 
 
-def whole_number_powering (base, exponent):
+def whole_number_powering (base: int, exponent: int) -> int:
     if exponent != 0:
         return base * whole_number_powering(base, exponent-1)
     return 1
