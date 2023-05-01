@@ -10,3 +10,21 @@ amount_elems = int(input("Enter a number of elements of the arithmetic progressi
 
 print([i for i in range(first_el_progression, 
                         first_el_progression + common_diff * (amount_elems - 1) + 1, common_diff)])
+
+# res_progression = []
+
+# def arithm_progression(u_1, d, n):
+#     for i in range(1, n + 1):
+#         res_progression.append(u_1 + d * (i - 1))
+#     return res_progression
+
+
+# print(arithm_progression(first_el_progression, common_diff, amount_elems))
+
+
+# def arithm_progression_1(u_1, d, n):
+#     res_progr = [u_1 + d * (i - 1) for i in range(1, n + 1)]
+#     return res_progr
+
+
+# print(arithm_progression_1(first_el_progression, common_diff, amount_elems))
