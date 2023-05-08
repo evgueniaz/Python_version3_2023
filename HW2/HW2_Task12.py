@@ -12,8 +12,8 @@ while x * y != p and y > 0:
     x += 1
     y = s - x
 
-    
+
 if x > 0 and y > 0:
     print(f'The chosen numbers are {x} and {y}')
 else:
-    print(f'There are no natural solution.')
+    print(f'There are no natural solutions.')
