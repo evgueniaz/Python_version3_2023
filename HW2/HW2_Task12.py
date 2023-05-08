@@ -7,8 +7,13 @@ s = int(input("Enter a sum of numbers to be guessed: "))
 p = int(input("Enter a product of numbers to be guessed: "))
 x = 1
 y = s - x
-while x * y != p:
+
+while x * y != p and y > 0:
     x += 1
     y = s - x
 
-print(f'The chosen numbers are {x} and {y}')
+    
+if x > 0 and y > 0:
+    print(f'The chosen numbers are {x} and {y}')
+else:
+    print(f'There are no natural solution.')
