@@ -29,4 +29,4 @@ def print_operation_table(operation, num_rows=6, num_columns=6):
     #         print(*list(map(operation, [i], [j])), end="\t")
     #     print()
 
-print(print_operation_table(lambda x, y: x * y))
+print_operation_table(lambda x, y: x * y)
