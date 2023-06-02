@@ -1,0 +1,28 @@
+import pandas as pd
+
+
+df = pd.read_csv('california_housing_train.csv')
+
+print(df.head(-5))
+
+print(df.shape)
+print(df.dtypes)
+
+print(df.isnull().sum())    #Проверить есть ли в файле пустые значения
+
+print(df[df['median_income'] < 2]['median_house_value'])    #Показать median_house_value где median_income < 2
+print(df.describe())
+print(df[['longitude', 'latitude']])    #Показать данные в первых 2 столбцах
+print(df[df['housing_median_age'] < 20][df['median_house_value'] > 70000]) 
+#Выбрать данные где housing_median_age < 20 и median_house_value > 70000
+
+print(df.median_house_value.max(), df.median_house_value.min())
+#Определить какое максимальное и минимальное значение median_house_value
+
+print(df.loc[df['median_income'] == 3.1250, ['median_house_value']].max())
+# Показать максимальное median_house_value, где median_income = 3.1250
+
+# df1 = df.loc[df.median_house_value < df.median_house_value.quantile(0.15)]
+print(df.loc[df.median_house_value < df.median_house_value.quantile(0.15)].population.max())
+# Узнать какая максимальная population в зоне минимального значения median_house_value
+
